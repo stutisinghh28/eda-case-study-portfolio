@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDA Portfolio - Vellore Institute of Technology</title>
+    <meta name="description" content="An Exploratory Data Analysis portfolio featuring 4 interactive case studies: Netflix, Telecom Churn, Spotify, and Sample Superstore. Associated with VIT.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Main Container Layout: Sidebar + Content -->
+    <div class="portfolio-layout">
+        
+        <!-- Sidebar Navigation -->
+        <aside class="portfolio-sidebar">
+            <div class="sidebar-header">
+                <div class="vit-logo">VIT</div>
+                <div class="sidebar-title">
+                    <h3>EDA Portfolio</h3>
+                    <p>VIT Case Studies</p>
+                </div>
+            </div>
+            
+            <nav class="case-study-nav">
+                <button class="nav-case-btn active" data-case="netflix">
+                    <span class="case-icon red">🎬</span>
+                    <span class="case-name">Netflix Strategy</span>
+                </button>
+                <button class="nav-case-btn" data-case="churn">
+                    <span class="case-icon blue">⚡</span>
+                    <span class="case-name">Telecom Churn</span>
+                </button>
+                <button class="nav-case-btn" data-case="spotify">
+                    <span class="case-icon cyan">🎵</span>
+                    <span class="case-name">Spotify Hits</span>
+                </button>
+                <button class="nav-case-btn" data-case="superstore">
+                    <span class="case-icon orange">🛍️</span>
+                    <span class="case-name">Superstore Sales</span>
+                </button>
+            </nav>
+            
+            <div class="sidebar-footer">
+                <p>Associated with</p>
+                <strong>Vellore Institute of Technology</strong>
+                <p class="copyright">&copy; 2026 EDA Portfolio</p>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="portfolio-main">
+            
+            <!-- Dynamic Top Header -->
+            <header class="dashboard-header">
+                <div class="header-titles">
+                    <span class="case-badge" id="active-case-badge">CASE STUDY 1</span>
+                    <h1 id="active-case-title">Netflix Content Strategy & Trends</h1>
+                </div>
+                <!-- Sub-tabs for Case Study Sections -->
+                <div class="tab-selectors">
+                    <button class="sub-tab-btn active" data-section="overview">Overview</button>
+                    <button class="sub-tab-btn" data-section="visualizations">Visualizations</button>
+                    <button class="sub-tab-btn" data-section="explorer">Data Explorer</button>
+                    <button class="sub-tab-btn" data-section="insights">Insights & Strategy</button>
+                </div>
+            </header>
+
+            <!-- Dynamic KPI Cards Panel -->
+            <div class="kpi-container">
+                <div class="kpi-card" id="kpi-card-1">
+                    <div class="kpi-info">
+                        <h4 id="kpi-label-1">Total Titles</h4>
+                        <div class="kpi-val" id="kpi-val-1">8,807</div>
+                        <p class="kpi-desc" id="kpi-desc-1">Catalog items</p>
+                    </div>
+                    <div class="kpi-badge-icon" id="kpi-icon-1">🎬</div>
+                </div>
+                
+                <div class="kpi-card" id="kpi-card-2">
+                    <div class="kpi-info">
+                        <h4 id="kpi-label-2">Movies Composition</h4>
+                        <div class="kpi-val" id="kpi-val-2">69.6%</div>
+                        <p class="kpi-desc" id="kpi-desc-2">6,131 movies</p>
+                    </div>
+                    <div class="kpi-badge-icon" id="kpi-icon-2">🎥</div>
+                </div>
+
+                <div class="kpi-card" id="kpi-card-3">
+                    <div class="kpi-info">
+                        <h4 id="kpi-label-3">TV Shows Composition</h4>
+                        <div class="kpi-val" id="kpi-val-3">30.4%</div>
+                        <p class="kpi-desc" id="kpi-desc-3">2,676 shows</p>
+                    </div>
+                    <div class="kpi-badge-icon" id="kpi-icon-3">📺</div>
+                </div>
+
+                <div class="kpi-card" id="kpi-card-4">
+                    <div class="kpi-info">
+                        <h4 id="kpi-label-4">Top Producer Country</h4>
+                        <div class="kpi-val" id="kpi-val-4">United States</div>
+                        <p class="kpi-desc" id="kpi-desc-4">3,689 co-productions</p>
+                    </div>
+                    <div class="kpi-badge-icon" id="kpi-icon-4">🌍</div>
+                </div>
+            </div>
+
+            <!-- Viewport sections -->
+            <div class="viewport-content">
+                
+                <!-- SECTION: OVERVIEW -->
+                <div id="section-overview" class="section-pane active">
+                    <div class="overview-grid">
+                        <div class="overview-main-card">
+                            <h2>Case Study Background</h2>
+                            <p id="overview-paragraph">Detailed case study context will load here.</p>
+                            
+                            <div class="academic-details">
+                                <span class="inst-pill">Vellore Institute of Technology</span>
+                                <span class="inst-sub">Academic Data Analysis Portfolio Contribution</span>
+                            </div>
+                        </div>
+                        
+                        <div class="tech-spec-card">
+                            <h3>Case Study Specs</h3>
+                            <div class="spec-list">
+                                <div class="spec-item">
+                                    <span class="spec-label">EDA Tools</span>
+                                    <div class="pills-row" id="overview-tools-row">
+                                        <span class="tool-pill">Python</span>
+                                        <span class="tool-pill">Pandas</span>
+                                        <span class="tool-pill">Matplotlib</span>
+                                        <span class="tool-pill">Seaborn</span>
+                                    </div>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Dataset Size</span>
+                                    <span class="spec-val" id="overview-dataset-size">8,807 rows x 12 columns</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-label">Key Variables Analyzed</span>
+                                    <span class="spec-val" id="overview-variables">Type, country, genre, duration, ratings, release year</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECTION: VISUALIZATIONS -->
+                <div id="section-visualizations" class="section-pane">
+                    <div class="gallery-layout">
+                        <!-- Left sidebar inside gallery for chart tabs -->
+                        <div class="gallery-selector" id="chart-selectors-container">
+                            <!-- Populated dynamically by app.js -->
+                        </div>
+                        
+                        <!-- Right main display area for selected chart -->
+                        <div class="gallery-view-card">
+                            <h3 id="gallery-chart-title">Chart Title</h3>
+                            <div class="chart-wrapper">
+                                <img id="gallery-chart-image" src="" alt="Case Study Chart">
+                            </div>
+                            <div class="chart-commentary-box">
+                                <h4>Analytical Interpretation</h4>
+                                <p id="gallery-chart-interpretation">Detailed description of this plot.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SECTION: DATA EXPLORER -->
+                <div id="section-explorer" class="section-pane">
+                    <!-- Filters Grid -->
+                    <div class="filters-panel">
+                        <div class="search-field">
+                            <label for="search-input">Full-Text Search</label>
+                            <input type="text" id="search-input" placeholder="Search rows...">
+                        </div>
+                        <div class="filter-field" id="dynamic-filter-field-1">
+                            <!-- Populated dynamically -->
+                        </div>
+                        <div class="filter-field" id="dynamic-filter-field-2">
+                            <!-- Populated dynamically -->
+                        </div>
+                        <button class="reset-filter-btn" id="btn-reset-explorer">Reset Filters</button>
+                    </div>
+
+                    <!-- Table controls -->
+                    <div class="table-bar">
+                        <div class="table-results-text">Showing <span id="tbl-filtered-count">0</span> of <span id="tbl-total-count">0</span> records</div>
+                        <div class="table-size-select">
+                            <label for="tbl-page-size">Page size:</label>
+                            <select id="tbl-page-size">
+                                <option value="10">10</option>
+                                <option value="25" selected>25</option>
+                                <option value="50">50</option>
+                                <option value="100">100</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Scrollable Table -->
+                    <div class="table-outer">
+                        <table class="portfolio-table" id="data-explorer-table">
+                            <thead id="table-head-row">
+                                <!-- Populated dynamically -->
+                            </thead>
+                            <tbody id="table-body-rows">
+                                <tr>
+                                    <td colspan="10" class="loading-td">Select case study to load table...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination-footer">
+                        <button class="p-btn" id="tbl-prev" disabled>&larr; Prev</button>
+                        <div class="p-nums" id="tbl-page-numbers"></div>
+                        <button class="p-btn" id="tbl-next" disabled>Next &rarr;</button>
+                    </div>
+                </div>
+
+                <!-- SECTION: INSIGHTS & STRATEGY -->
+                <div id="section-insights" class="section-pane">
+                    <div class="insights-container">
+                        <div class="insights-top-banner">
+                            <h3>Key Contributions & Core Findings</h3>
+                            <p>Strategic summaries derived from Exploratory Data Analysis (EDA) of the active case study.</p>
+                        </div>
+                        
+                        <div class="insights-accordion-list" id="insights-accordion-list">
+                            <!-- Populated dynamically -->
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Reusable Dynamic Detail Modal -->
+    <div id="record-detail-modal" class="modal-overlay">
+        <div class="modal-box">
+            <span class="modal-close-icon">&times;</span>
+            <div class="modal-header-meta" id="modal-header-tag">CASE DETAIL</div>
+            <h2 id="modal-header-title">Title</h2>
+            
+            <div class="modal-body-scrollable">
+                <div class="modal-details-grid" id="modal-key-value-container">
+                    <!-- Populated dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
