@@ -83,9 +83,8 @@ THEME_ORANGE = '#FF5722'
 # Global dictionary to store computed metrics
 portfolio_metrics = {}
 
-# =====================================================================
 # CASE STUDY 1: NETFLIX
-# =====================================================================
+
 def run_netflix_analysis():
     print("\n--- Running Case Study 1: Netflix content analysis ---")
     df = pd.read_csv(paths["netflix"])
@@ -191,9 +190,8 @@ def run_netflix_analysis():
     df[columns_keep].to_csv(os.path.join(DATA_PROCESSED_DIR, 'netflix_cleaned.csv'), index=False)
     print("Netflix analysis complete.")
 
-# =====================================================================
 # CASE STUDY 2: CUSTOMER CHURN
-# =====================================================================
+
 def run_churn_analysis():
     print("\n--- Running Case Study 2: Telecom Customer Churn analysis ---")
     df = pd.read_csv(paths["churn"])
@@ -291,9 +289,9 @@ def run_churn_analysis():
     df[columns_keep].to_csv(os.path.join(DATA_PROCESSED_DIR, 'churn_cleaned.csv'), index=False)
     print("Churn analysis complete.")
 
-# =====================================================================
+
 # CASE STUDY 3: SPOTIFY
-# =====================================================================
+
 def run_spotify_analysis():
     print("\n--- Running Case Study 3: Spotify Tracks analysis ---")
     df = pd.read_csv(paths["spotify"], encoding='latin-1')
@@ -487,9 +485,9 @@ def run_superstore_analysis():
     df[columns_keep].to_csv(os.path.join(DATA_PROCESSED_DIR, 'superstore_cleaned.csv'), index=False)
     print("Superstore analysis complete.")
 
-# =====================================================================
+
 # MAIN PIPELINE
-# =====================================================================
+
 if __name__ == "__main__":
     setup_plot_style()
     
