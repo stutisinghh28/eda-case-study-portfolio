@@ -1,256 +1,30 @@
-# 📊 EDA Case Study Portfolio
+# EDA Case Study Portfolio
 
-A comprehensive Exploratory Data Analysis (EDA) portfolio featuring four real-world datasets across entertainment, telecommunications, music, and retail industries. This project demonstrates end-to-end data analytics workflows including data cleaning, preprocessing, statistical analysis, visualization, KPI generation, and business insight extraction using Python.
+A collection of four exploratory data analysis case studies spanning entertainment, telecom, music, and retail  over 35,000 records total, cleaned, analyzed, and presented through an interactive dashboard. Built with Python (Pandas, NumPy, Matplotlib, Seaborn) and a lightweight HTML/CSS/JS frontend.
 
----
+Each case study follows the same workflow: data cleaning, EDA, KPI generation, visualization, and business insight extraction.
 
-## 🚀 Project Overview
+**Netflix Content Strategy** — Looks at how Netflix's content library has grown over time, which countries produce the most content, how ratings break down, and how movies compare to TV shows.
 
-This portfolio was developed to showcase practical data analytics skills through multiple industry-focused case studies. Each case study follows a structured analytical workflow:
+**Telecom Customer Churn** (IBM Telco dataset) — Explores which customers are most likely to churn, and how tenure, contract type, and monthly charges relate to retention.
 
-* Data Collection & Validation
-* Data Cleaning & Preprocessing
-* Exploratory Data Analysis (EDA)
-* Statistical Summaries & KPI Generation
-* Data Visualization
-* Business Insight Development
+**Spotify Music Trends** — Examines which audio features (danceability, energy, etc.) correlate with track popularity.
 
-The project analyzes more than **35,000 records** across multiple domains and presents findings through an interactive dashboard interface.
+**Global Superstore Sales** — Breaks down revenue and profitability by category, region, and customer segment to find where the business is actually making money.
 
----
+The dashboard itself supports navigation between case studies, KPI summary cards, searchable data tables, and responsive layouts.
 
-## 🛠️ Tech Stack
-
-### Programming & Analysis
-
-* Python
-* Pandas
-* NumPy
-
-### Data Visualization
-
-* Matplotlib
-* Seaborn
-
-### Frontend Dashboard
-
-* HTML
-* CSS
-* JavaScript
-
-### Development Tools
-
-* Git
-* GitHub
-
----
-
-# 📺 Case Study 1: Netflix Content Strategy Analysis
-
-### Dataset
-
-Netflix Movies & TV Shows Dataset
-
-### Business Questions
-
-* How has Netflix content evolved over time?
-* Which countries contribute the most content?
-* What content ratings dominate the platform?
-* How does movie content compare with TV shows?
-
-### Key Analysis
-
-* Content Type Distribution
-* Year-wise Content Additions
-* Ratings Classification Analysis
-* Country-wise Production Analysis
-
-### Insights Generated
-
-* Growth patterns in Netflix content additions
-* Geographic content concentration
-* Audience targeting trends through ratings
-
----
-
-# 📱 Case Study 2: Telecom Customer Churn Analysis
-
-### Dataset
-
-IBM Telco Customer Churn Dataset
-
-### Business Questions
-
-* Which customers are most likely to churn?
-* How does tenure impact churn behavior?
-* What role do contract types play in retention?
-* How do monthly charges influence churn?
-
-### Key Analysis
-
-* Churn Rate Distribution
-* Contract Type Comparison
-* Monthly Charges Analysis
-* Customer Tenure Analysis
-
-### Insights Generated
-
-* High-risk customer segments
-* Retention-related behavioral patterns
-* Revenue-impacting churn factors
-
----
-
-# 🎵 Case Study 3: Spotify Music Trends Analysis
-
-### Dataset
-
-Spotify Popular Tracks Dataset
-
-### Business Questions
-
-* Which audio attributes influence popularity?
-* How are music characteristics correlated?
-* What patterns exist among top-performing tracks?
-
-### Key Analysis
-
-* Popularity Distribution
-* Danceability Analysis
-* Energy vs Popularity
-* Correlation Heatmaps
-
-### Insights Generated
-
-* Feature relationships among successful tracks
-* Audio characteristics associated with popularity
-* Emerging music consumption trends
-
----
-
-# 🛒 Case Study 4: Global Superstore Sales Analysis
-
-### Dataset
-
-Global Superstore Sales Dataset
-
-### Business Questions
-
-* Which categories generate the most revenue?
-* Which products are most profitable?
-* How does profitability vary across regions?
-* What customer segments drive sales?
-
-### Key Analysis
-
-* Sales by Category
-* Profit by Category
-* Regional Performance
-* Customer Segment Analysis
-
-### Insights Generated
-
-* High-performing business segments
-* Profitability optimization opportunities
-* Regional growth trends
-
----
-
-## 📈 Dashboard Features
-
-* Interactive Case Study Navigation
-* KPI Summary Cards
-* Dynamic Visualizations
-* Searchable Data Tables
-* Statistical Summaries
-* Responsive Dashboard Design
-
----
-
-## 📂 Project Structure
-
-eda-case-study-portfolio/
-
-├── data/
-
-│   ├── raw/
-
-│   └── processed/
-
-├── output/
-
-│   ├── case_study_1/
-
-│   ├── case_study_2/
-
-│   ├── case_study_3/
-
-│   └── case_study_4/
-
-├── src/
-
-│   ├── analyze.py
-
-│   ├── app.js
-
-│   ├── style.css
-
-│   └── index.html
-
-├── requirements.txt
-
-└── run.py
-
----
-
-## ▶️ Getting Started
-
-Clone the repository:
+## Running it
 
 ```bash
 git clone https://github.com/stutisinghh28/eda-case-study-portfolio.git
 cd eda-case-study-portfolio
-```
-
-Install dependencies:
-
-```bash
 pip install -r requirements.txt
-```
-
-Run the project:
-
-```bash
 python run.py
 ```
 
-Open:
+Then open `http://localhost:8080`.
 
-```text
-http://localhost:8080
-```
+## Author
 
----
-
-## 📌 Skills Demonstrated
-
-* Exploratory Data Analysis (EDA)
-* Data Cleaning & Preprocessing
-* Statistical Analysis
-* Data Visualization
-* Business Intelligence
-* KPI Development
-* Dashboard Design
-* Python Programming
-* Data Storytelling
-
----
-
-## 👩‍💻 Author
-
-**Stuti Singh**
-
-Computer Science Engineering (CSE)
-Vellore Institute of Technology (VIT), Chennai
-
-
+Stuti Singh - CSE, VIT Chennai
