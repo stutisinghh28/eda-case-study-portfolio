@@ -4,13 +4,13 @@ A collection of four exploratory data analysis case studies spanning entertainme
 
 Each case study follows the same workflow: data cleaning, EDA, KPI generation, visualization, and business insight extraction.
 
-**Netflix Content Strategy** — Looks at how Netflix's content library has grown over time, which countries produce the most content, how ratings break down, and how movies compare to TV shows.
+**Netflix Content Strategy** - Looks at how Netflix's content library has grown over time, which countries produce the most content, how ratings break down, and how movies compare to TV shows.
 
-**Telecom Customer Churn** (IBM Telco dataset) — Explores which customers are most likely to churn, and how tenure, contract type, and monthly charges relate to retention.
+**Telecom Customer Churn** (IBM Telco dataset) - Explores which customers are most likely to churn, and how tenure, contract type, and monthly charges relate to retention.
 
-**Spotify Music Trends** — Examines which audio features (danceability, energy, etc.) correlate with track popularity.
+**Spotify Music Trends** - Examines which audio features (danceability, energy, etc.) correlate with track popularity.
 
-**Global Superstore Sales** — Breaks down revenue and profitability by category, region, and customer segment to find where the business is actually making money.
+**Global Superstore Sales** - Breaks down revenue and profitability by category, region, and customer segment to find where the business is actually making money.
 
 The dashboard itself supports navigation between case studies, KPI summary cards, searchable data tables, and responsive layouts.
 
