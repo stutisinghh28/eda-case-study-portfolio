@@ -139,9 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const modalHeaderTitle = document.getElementById('modal-header-title');
     const modalKeyValueContainer = document.getElementById('modal-key-value-container');
 
-    // ==========================================
-    // NAVIGATION & PORTFOLIO LOGIC
-    // ==========================================
+   
     
     // Switch between the 4 Case Studies
     sidebarButtons.forEach(btn => {
@@ -185,9 +183,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ==========================================
-    // DATA LOADING & CALCULATION ENGINE
-    // ==========================================
     
     // CSV Parser
     function parseCSV(text) {
@@ -459,9 +454,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ==========================================
-    // DATA EXPLORER & TABLES LOGIC (DATA INTENSIVE)
-    // ==========================================
+    
     
     // Set headers and structure dynamically
     const tableColumnsConfig = {
